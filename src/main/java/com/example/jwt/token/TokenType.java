@@ -1,2 +1,8 @@
-package com.example.jwt.token;public enum TokenType {
+package com.example.hotelback.token;
+
+
+
+public enum TokenType {
+    BEARER
 }
+
