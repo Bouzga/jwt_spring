@@ -1,14 +1,8 @@
-package com.example.hotelback.auth;
+package com.example.jwt.auth;
 
 
 
-
-
-
-
-
-import com.example.hotelback.Entities.Role;
-import com.example.hotelback.Entities.User;
+import com.example.jwt.Entities.User;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

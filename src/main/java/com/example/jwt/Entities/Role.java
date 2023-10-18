@@ -1,4 +1,4 @@
-package com.example.hotelback.Entities;
+package com.example.jwt.Entities;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -9,7 +9,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static com.example.hotelback.Entities.Permission.*;
+import static com.example.jwt.Entities.Permission.*;
+
 
 @RequiredArgsConstructor
 public enum Role {

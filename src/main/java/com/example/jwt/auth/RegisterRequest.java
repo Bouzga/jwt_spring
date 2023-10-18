@@ -1,8 +1,6 @@
-package com.example.hotelback.auth;
+package com.example.jwt.auth;
 
-
-import com.example.hotelback.Entities.Role;
-import jakarta.persistence.Column;
+import com.example.jwt.Entities.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -1,12 +1,12 @@
-package com.example.hotelback.Entities;
-import com.example.hotelback.token.Token;
+package com.example.jwt.Entities;
+
+import com.example.jwt.token.Token;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -45,9 +45,7 @@ public class User implements UserDetails {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Token> tokens;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "id_reservation")
-    private List<Reservation> reservations ;
+
 
     @JsonIgnore
     @Override

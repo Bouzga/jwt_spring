@@ -1,10 +1,7 @@
-package com.example.hotelback.responses;
+package com.example.jwt.responses;
 
-import com.example.hotelback.Entities.Reservation;
-import com.example.hotelback.Entities.Role;
-import com.example.hotelback.token.Token;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.*;
+
+import com.example.jwt.Entities.Role;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,5 +18,5 @@ public class UserResponse {
     private String phoneNumber;
     private String adresse;
     private Role role;
-    private List<ReservationResponse> reservations ;
+
 }

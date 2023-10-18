@@ -1,15 +1,12 @@
-package com.example.hotelback.auth;
+package com.example.jwt.auth;
 
-
-
-
-import com.example.hotelback.Entities.Role;
-import com.example.hotelback.Entities.User;
-import com.example.hotelback.config.JwtService;
-import com.example.hotelback.repositories.UserRepository;
-import com.example.hotelback.token.Token;
-import com.example.hotelback.token.TokenRepository;
-import com.example.hotelback.token.TokenType;
+import com.example.jwt.Entities.Role;
+import com.example.jwt.Entities.User;
+import com.example.jwt.config.JwtService;
+import com.example.jwt.repositories.UserRepository;
+import com.example.jwt.token.Token;
+import com.example.jwt.token.TokenRepository;
+import com.example.jwt.token.TokenType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -17,10 +14,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;

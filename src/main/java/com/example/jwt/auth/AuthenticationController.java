@@ -1,14 +1,13 @@
-package com.example.hotelback.auth;
-import com.example.hotelback.Entities.Role;
-import com.example.hotelback.Entities.User;
-import com.example.hotelback.helpers.jwtHelper;
-import com.example.hotelback.repositories.UserRepository;
-import com.example.hotelback.responses.UserJwtResponse;
+package com.example.jwt.auth;
+
+
+import com.example.jwt.Entities.User;
+import com.example.jwt.repositories.UserRepository;
+import com.example.jwt.responses.UserJwtResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -104,12 +103,7 @@ public class AuthenticationController {
         service.refreshToken(request, response);
     }
 
-    @GetMapping("/Profile")
-    public ResponseEntity<User> docProfile(HttpServletRequest request) {
-        var email = jwtHelper.getEmail(request);
-        return ResponseEntity.ok(userRepository.findByEmail(email).get());
 
-    }
 
 
 }

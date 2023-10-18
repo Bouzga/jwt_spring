@@ -1,7 +1,8 @@
-package com.example.hotelback.config;
+package com.example.jwt.config;
 
 
-import com.example.hotelback.repositories.UserRepository;
+
+import com.example.jwt.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

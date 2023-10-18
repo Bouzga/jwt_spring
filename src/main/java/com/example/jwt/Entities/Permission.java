@@ -1,4 +1,4 @@
-package com.example.hotelback.Entities;
+package com.example.jwt.Entities;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

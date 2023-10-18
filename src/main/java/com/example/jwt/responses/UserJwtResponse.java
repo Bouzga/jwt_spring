@@ -1,6 +1,7 @@
-package com.example.hotelback.responses;
+package com.example.jwt.responses;
 
-import com.example.hotelback.Entities.Role;
+
+import com.example.jwt.Entities.Role;
 import lombok.Getter;
 import lombok.Setter;
 

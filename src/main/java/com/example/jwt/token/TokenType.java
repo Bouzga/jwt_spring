@@ -1,4 +1,4 @@
-package com.example.hotelback.token;
+package com.example.jwt.token;
 
 
 

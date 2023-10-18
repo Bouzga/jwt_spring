@@ -1,5 +1,7 @@
-package com.example.hotelback.config;
-import com.example.hotelback.token.TokenRepository;
+package com.example.jwt.config;
+
+
+import com.example.jwt.token.TokenRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
